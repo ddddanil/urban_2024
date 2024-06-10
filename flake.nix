@@ -51,11 +51,13 @@
           # https://devenv.sh/reference/options/
           packages = [ config.packages.default ];
 
-          enterShell = ''
-            hello
-          '';
-
-          processes.hello.exec = "hello";
+          languages.python = {
+            enable = true;
+            poetry = {
+              enable = true;
+              activate.enable = true;
+            };
+          };
         };
 
       };
