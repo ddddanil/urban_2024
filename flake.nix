@@ -40,7 +40,7 @@
             in
             pkgs.lib.mkIf (devenvRootFileContent != "") devenvRootFileContent;
 
-          name = "my-project";
+          name = "urban_2024";
 
           imports = [
             # This is just like the imports in devenv.nix.
@@ -49,7 +49,10 @@
           ];
 
           # https://devenv.sh/reference/options/
-          packages = [ config.packages.default ];
+          packages = [
+            config.packages.default
+            pkgs.pyright
+          ];
 
           languages.python = {
             enable = true;
