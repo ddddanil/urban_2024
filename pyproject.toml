@@ -13,6 +13,9 @@ blocksnet = {git = "https://github.com/iduprojects/blocksnet"}
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
+ipython = "^8.25.0"
+ipykernel = "^6.29.4"
+cython = "^3.0.10"
 
 [build-system]
 requires = ["poetry-core"]
