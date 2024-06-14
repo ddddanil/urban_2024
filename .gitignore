@@ -11,3 +11,4 @@ devenv.local.nix
 
 # Python
 .venv
+__pycache__
