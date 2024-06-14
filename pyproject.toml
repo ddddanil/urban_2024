@@ -9,13 +9,14 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
-blocksnet = {git = "https://github.com/iduprojects/blocksnet"}
+blocksnet = "0.0.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.2.2"
 ipython = "^8.25.0"
 ipykernel = "^6.29.4"
 cython = "^3.0.10"
+ipywidgets = "^8.1.3"
 
 [build-system]
 requires = ["poetry-core"]
