@@ -56,6 +56,8 @@
           packages = [
             config.packages.default
             pkgs.pyright
+            pkgs.cbc
+            pkgs.glpk
           ];
 
           languages.python = {
